@@ -1,0 +1,44 @@
+{
+  "author": {
+    "name": "Vsevolod Krasnobaev",
+    "email": "maximov.vsev@gmail.com",
+    "url": "https://github.com/bckr75"
+  },
+  "bugs": {
+    "url": "https://github.com/bckr75/client-history/issues"
+  },
+  "description": "Store your items in localStorage as JSON string.",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "webpack": "^3.4.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "lib",
+    "src",
+    "tests"
+  ],
+  "homepage": "https://github.com/bckr75/client-history",
+  "keywords": [
+    "localstorage",
+    "storage",
+    "client history",
+    "history"
+  ],
+  "license": "MIT",
+  "name": "client-history",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bckr75/client-history"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "title": "Client History - simple and fast use of localStorage",
+  "version": "1.0.1"
+}
