@@ -91,7 +91,7 @@ export default class ClientHistory {
         if (!arr.length) {
             arr.push(item);
             localStorage.setItem(this.name, JSON.stringify(arr));
-            return;
+            return this;
         }
         if (arr.length >= this.defaults.limit) {
             arr.shift();
