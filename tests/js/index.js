@@ -6,6 +6,7 @@ clientHistory = new ClientHistory({
         limit: 10
     }
 }).drop();
+clientHistory.getItems();
 uniqueHistory = new ClientHistory({
     name: 'uniqueClick',
     checkFields: ['unique']
