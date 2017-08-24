@@ -47,7 +47,7 @@ Just copy lib.min.js from directory lib to one of your site folders, then add sc
 
 #### _getItems()_
 Gets array saved as JSON string in localStorage, parses and returns it.
-```
+```javascript
   clientHistory.getItems()
 ```
 #### _push(item)_
@@ -56,7 +56,7 @@ Pushes `item` to array, saves array to localStorage as JSON string.
 __Your `item` can be anything you like to save, just make sure it's an object.__
 
 Example: 
-```
+```javascript
   clientHistory.push({
       date: new Date(),
       ip: yourIpMethod()
@@ -64,7 +64,7 @@ Example:
 ```
 #### _drop()_
 Removes your array(saved as JSON string) from localStorage, so that you can start from scratch.
-```
+```javascript
   clientHistory.drop()
 ```
 
