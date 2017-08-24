@@ -41,5 +41,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "title": "Client History - simple and fast use of localStorage",
-  "version": "1.0.4"
+  "version": "1.0.5"
 }
