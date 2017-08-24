@@ -3,6 +3,7 @@ Need to store user actions, but your database would be too big for every user's 
 Store them in localStorage. This library can help you with it.
 
 ## _Feel free to use, check [JSDoc](https://github.com/bckr75/client-history/blob/master/src/index.js) for more information._
+#### Wanna see in action? [Check this page](https://bckr75.github.io/client-history/tests/)
 
 ## Installation
 ```
