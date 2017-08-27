@@ -44,7 +44,7 @@ Just copy lib.min.js from directory lib to one of your site folders, then add sc
 
 `defaults`: Optional, settings object. By now you can only set the limit of items to save in array. Thus if you will push an item to the array that exceeding items limit, first element in array will be removed, and your item added at the very end of it.
 
-`checkfields`: Optional, if set - your pushing item will be compared to all items in localStorage. If your item's fields described in `checkFields` will match item in localStorage array, that item will be removed from array, your item will be added at the end. It is useful if you want to keep some order in your stored items and don't want duplicates in it.
+`checkFields`: Optional, if set - your pushing item will be compared to all items in localStorage. If your item's fields described in `checkFields` will match item in localStorage array, that item will be removed from array, your item will be added at the end. It is useful if you want to keep some order in your stored items and don't want duplicates in it.
 
 #### _getItems()_
 Gets array saved as JSON string in localStorage, parses and returns it.

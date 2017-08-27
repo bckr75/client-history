@@ -88,24 +88,21 @@ export default class ClientHistory {
             throw new Error(`Invalid argument type, expected 'object', got ${typeof item}`);
         }
         let arr = this.getItems();
-        if (!arr.length) {
-            arr.push(item);
-            localStorage.setItem(this.name, JSON.stringify(arr));
-            return this;
-        }
-        if (arr.length >= this.defaults.limit) {
-            arr.shift();
-        }
-        if (this.checkFields && typeof this.checkFields === "object") {
-            arr.forEach((record, index) => {
-                if (this.checkFields.every((field) => {
-                        if (typeof(record) === 'object') {
-                            return record[field] === item[field];
-                        }
-                    })) {
-                    return arr.splice(index, 1);
-                }
-            });
+        if (arr.length) {
+            if (arr.length >= this.defaults.limit) {
+                arr.shift();
+            }
+            if (this.checkFields && typeof this.checkFields === "object") {
+                arr.forEach((record, index) => {
+                    if (this.checkFields.every((field) => {
+                            if (typeof(record) === 'object') {
+                                return record[field] === item[field];
+                            }
+                        })) {
+                        return arr.splice(index, 1);
+                    }
+                });
+            }
         }
         arr.push(item);
         localStorage.setItem(this.name, JSON.stringify(arr));
